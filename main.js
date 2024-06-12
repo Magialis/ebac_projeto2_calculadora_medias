@@ -48,7 +48,7 @@ function atualizaTabela() {
 function atualizaMediaFinal() {
     const mediaFinal = calculaMediafinal();
 
-    document.querySelector('#media-final-valor').innerHTML = mediaFinal;
+    document.querySelector('#media-final-valor').innerHTML = mediaFinal.toFixed(2); //toFixed limita as casas decimais
     document.querySelector('#media-final-resultado').innerHTML = mediaFinal >= notaMinima ? spanAprovado : spanReprovado;
 }
 
